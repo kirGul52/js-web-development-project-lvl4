@@ -1,10 +1,9 @@
 #! /usr/bin/env node
 
-import getApp from '../index.js';
+import getApp from "../index.js";
 
 const port = process.env.PORT || 5000;
-const address = '0.0.0.0';
 
-getApp().listen(port, address, () => {
+getApp().listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
